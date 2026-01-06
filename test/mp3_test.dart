@@ -80,8 +80,7 @@ void testChapters() {
   });
 
   test('OverDrive MediaMarkers', () async {
-    final path =
-        '/media/Stuff/Projects/Flutter/audius/plugins/tag_reader/test/media/mp3/chaptered-media-markers.mp3';
+    final path = join(_parent, 'chaptered-media-markers.mp3');
     final tags = await TagReader.readTagsFrom(path);
 
     expect(tags?.title, 'Book 1');
