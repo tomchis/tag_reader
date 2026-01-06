@@ -25,7 +25,7 @@ class TextFrame extends Frame {
       return Unhandled(identifier, size);
     }
 
-    text = reader.readToEndString(encoding);
+    text = reader.readNullTerminatedString(encoding);
 
     return this;
   }

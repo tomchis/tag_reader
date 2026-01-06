@@ -28,7 +28,7 @@ class CommentFrame extends Frame {
     shortText = reader.readNullTerminatedString(encoding);
     if (shortText != null && shortText!.isEmpty) shortText = null;
 
-    text = reader.readToEndString(encoding);
+    text = reader.readNullTerminatedString(encoding);
     if (text != null && text!.isEmpty) text = null;
 
     return this;

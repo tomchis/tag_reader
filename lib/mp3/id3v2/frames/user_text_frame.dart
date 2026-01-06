@@ -26,7 +26,7 @@ class UserTextFrame extends Frame {
 
     description = reader.readNullTerminatedString(encoding);
 
-    text = reader.readToEndString(encoding);
+    text = reader.readNullTerminatedString(encoding);
 
     return this;
   }
