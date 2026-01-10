@@ -39,6 +39,8 @@ abstract class TagReader {
     ImageMode imageMode = .first,
     int bufferSize = BufferedReader.defaultBufferSize,
   }) async {
+    assert(bufferSize > 0);
+
     Logger.root.onRecord.listen(
       (event) =>
           log(event.message, name: event.loggerName, level: event.level.value),
