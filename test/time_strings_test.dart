@@ -1,4 +1,4 @@
-import 'package:tag_reader/shared_extensions.dart';
+import 'package:tag_reader/src/shared_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {

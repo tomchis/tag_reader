@@ -4,16 +4,16 @@ import 'dart:developer';
 
 import 'package:logging/logging.dart';
 import 'package:path/path.dart' as p;
-import 'package:tag_reader/enums/image_mode.dart';
-import 'package:tag_reader/exceptions/file_type_unsupported.dart';
-import 'package:tag_reader/models/tag.dart';
-import 'package:tag_reader/mp3/mp3_file.dart';
-import 'package:tag_reader/mp4/mp4_file.dart';
-import 'package:tag_reader/util/buffered_reader.dart';
+import 'package:tag_reader/src/enums/image_mode.dart';
+import 'package:tag_reader/src/exceptions/file_type_unsupported.dart';
+import 'package:tag_reader/src/models/tag.dart';
+import 'package:tag_reader/src/mp3/mp3_file.dart';
+import 'package:tag_reader/src/mp4/mp4_file.dart';
+import 'package:tag_reader/src/util/buffered_reader.dart';
 
-export 'package:tag_reader/exceptions/file_type_unsupported.dart';
-export 'package:tag_reader/models/cover_art.dart';
-export 'package:tag_reader/models/tag.dart';
+export 'package:tag_reader/src/exceptions/file_type_unsupported.dart';
+export 'package:tag_reader/src/models/cover_art.dart';
+export 'package:tag_reader/src/models/tag.dart';
 
 abstract class TagReader {
   /// Images will be retrieved according to `imageMode`.

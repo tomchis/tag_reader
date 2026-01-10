@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:path/path.dart';
-import 'package:tag_reader/util/buffered_reader.dart';
-import 'package:tag_reader/util/byte_reader.dart';
+import 'package:tag_reader/src/util/buffered_reader.dart';
+import 'package:tag_reader/src/util/byte_reader.dart';
 import 'package:test/test.dart';
 
 import 'util.dart';
